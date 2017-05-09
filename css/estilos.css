@@ -1,0 +1,245 @@
+/* GERAL */
+
+body{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: 4d4d4d;    
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #8f2faf;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f1f1f1;
+    border-radius: 3px;
+    font-size: 1.0em;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: Pacifico, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #f1f1f1;
+    width: 100%;
+    
+}
+
+/* CABEÇALHO */
+
+header {
+    margin-top: 0px;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/* SECTION SOBRE */
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px 20px;
+    background-color: #8f2faf;
+    color: #f1f1f1;  
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .btn {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+
+/*SECTION SERVIÇOS*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin-top: 30px;
+}
+
+/* SECTION PORTFOLIO */
+
+#port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;   
+}
+
+#port h2 {
+    margin-bottom: 20px;
+}
+
+#port img {
+    width: 100%;
+}
+
+/*SECTION CONTATO */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#contato a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600
+}
+
+/*SECTION FOOTER*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px){
+    /*NAVEGAÇÃO*/
+    nav {
+        flex-direction: row; 
+        justify-content: space-around
+    }
+    nav ul {
+        flex-direction: row;
+        width: 55%;
+    }
+    
+    /*CABEÇALHO*/
+    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;        
+    }
+    
+    /*sobre*/
+    
+    #sobre{
+        height: 600px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    /*serviços*/
+    
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0px 10px;
+    }
+    /* SECTION PORTFOLIO */
+    
+    #port {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #port h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #port img{
+        width: 33.3333333333%;
+    
+    }
+    
+    /*CONTATO */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2, p {
+        width: 100%;
+        padding-right: 50px;
+    }
+}
