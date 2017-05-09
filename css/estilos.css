@@ -126,6 +126,7 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #servicos div {
@@ -133,8 +134,8 @@ header p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 70%;
     margin-top: 30px;
+    width: 100%;
 }
 
 /* SECTION PORTFOLIO */
@@ -226,7 +227,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     
@@ -238,6 +239,10 @@ footer {
         flex-grow: 1;
         flex-basis: 150px;
         padding: 0px 10px;
+        align-items: center; 
+    }
+    #servicos div p{
+        padding: 0px;
     }
     /* SECTION PORTFOLIO */
     
